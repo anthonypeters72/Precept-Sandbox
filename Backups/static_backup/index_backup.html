@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Precept Sandbox</title>
+  <link rel="stylesheet" href="/static/styles.css?v=2" />
+  <link rel="manifest" href="/static/manifest.json">
+</head>
+
+<body>
+  <div class="card">
+
+    <h2>Precept Sandbox</h2>
+
+    <div class="nav-box">
+
+      <label for="corpus">Corpus</label>
+      <select id="corpus">
+        <option value="">Auto</option>
+        <option value="kjv">Bible</option>
+        <option value="apoc">Apocrypha</option>
+        <option value="enoch">Enoch</option>
+        <option value="hermas">Hermas</option>
+        <option value="jasher">Jasher</option>
+        <option value="jubilees">Jubilees</option>
+        <option value="patriarchs">Patriarchs</option>
+        <option value="quran">Quran</option>
+        <option value="adam_eve_2">Adam &amp; Eve 2</option>
+      </select>
+
+      <label for="book">Book</label>
+      <select id="book">
+        <option value="">Select book</option>
+      </select>
+
+      <label for="chapter">Chapter</label>
+      <select id="chapter">
+        <option value="">Select chapter</option>
+      </select>
+
+      <label for="verse">Verse</label>
+      <input id="verse" placeholder="1 or 1-5" />
+
+    </div>
+
+    <input id="q" placeholder="or type query: Genesis 1:1" />
+
+    <button id="searchBtn">Search</button>
+
+    <div class="hint">
+      Tip: add <b>--strong</b> for Strong’s output.
+    </div>
+
+    <div id="out" class="out"></div>
+
+    <div id="out" class="out"></div>
+
+    <div class="feedback">
+      <div class="feedback-text">This is an early version — your feedback helps improve it.</div>
+      <a href="https://forms.gle/2uvhVkosioeEQ7hRA" target="_blank" rel="noopener noreferrer">
+        💬 Share feedback or suggestions
+      </a>
+    </div>
+
+  </div>
+
+  <script src="/static/app.js?v=99"></script>
+</body>
+
+</html>

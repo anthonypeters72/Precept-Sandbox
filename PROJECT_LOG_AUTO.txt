@@ -1,0 +1,199 @@
+[2026-02-09 14:42:33] ERROR: cannot access local variable 'final_precepts' where it is not associated with a value
+[2026-02-09 14:47:47] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-09 15:43:58] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-09 15:44:13] Strict-no-pad: no credible precepts for Quran 1:1 (source=quran)
+[2026-02-09 15:44:40] Fallback used for Amos 1:9 | added=3 | source=kjv
+[2026-02-09 16:03:20] ERROR: name 'get' is not defined
+[2026-02-09 16:29:56] Strict-no-pad: no credible precepts for Testament Of Reuben 1:2 (source=patriarchs)
+[2026-02-09 16:37:41] Strict-no-pad: no credible precepts for Testament Of Reuben 1:2 (source=patriarchs)
+[2026-02-09 17:29:56] Strict-no-pad: no credible precepts for Testament Of Reuben 1:2 (source=patriarchs)
+[2026-02-09 20:51:01] Fallback used for James 2:1 | added=3 | source=kjv
+[2026-02-09 22:25:27] ERROR: name 'patriarchs' is not defined
+[2026-02-09 22:26:35] ERROR: field larger than field limit (131072)
+[2026-02-09 22:36:41] Fallback used for Exodus 20:9 | added=3 | source=kjv
+[2026-02-10 19:17:44] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-10 19:18:26] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-10 19:18:51] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-10 19:54:33] Fallback used for Genesis 1:3 | added=3 | source=kjv
+[2026-02-10 19:55:13] Fallback used for Genesis 1:3 | added=3 | source=kjv
+[2026-02-10 20:01:50] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-10 20:06:40] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-10 20:08:21] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-10 20:09:51] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-10 20:10:10] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-10 20:14:32] Fallback used for Psalms 18:10 | added=3 | source=kjv
+[2026-02-10 20:16:34] Strict-no-pad: no credible precepts for Quran 20:24 (source=quran)
+[2026-02-10 20:16:37] Strict-no-pad: no credible precepts for Quran 20:25 (source=quran)
+[2026-02-10 20:16:38] Strict-no-pad: no credible precepts for Quran 20:26 (source=quran)
+[2026-02-10 20:29:58] Strict-no-pad: no credible precepts for Quran 20:24 (source=quran)
+[2026-02-10 20:30:00] Strict-no-pad: no credible precepts for Quran 20:25 (source=quran)
+[2026-02-10 20:30:03] Strict-no-pad: no credible precepts for Quran 20:26 (source=quran)
+[2026-02-10 20:30:49] Fallback used for Genesis 1:3 | added=3 | source=kjv
+[2026-02-10 21:41:51] Fallback used for Exodus 20:12 | added=3 | source=kjv
+[2026-02-10 21:48:01] Strict-no-pad: no credible precepts for 1 Enoch 1:1 (source=enoch)
+[2026-02-10 21:53:06] ERROR: too many values to unpack (expected 3)
+[2026-02-10 21:56:54] ERROR: too many values to unpack (expected 3)
+[2026-02-10 21:58:05] Strict-no-pad: no credible precepts for 1 Enoch 1:1 (source=enoch)
+[2026-02-10 21:59:53] Strict-no-pad: no credible precepts for 1 Enoch 1:1 (source=enoch)
+[2026-02-10 22:06:06] Strict-no-pad: no credible precepts for 1 Enoch 1:1 (source=enoch)
+[2026-02-10 22:26:57] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-10 22:27:10] Strict-no-pad: no credible precepts for Quran 1:1 (source=quran)
+[2026-02-10 22:27:23] Fallback used for Exodus 20:6 | added=3 | source=kjv
+[2026-02-10 22:42:48] ERROR: name 'hermas_raw' is not defined
+[2026-02-10 22:43:11] ERROR: name 'enoch' is not defined
+[2026-02-10 22:43:44] ERROR: name 'hermas' is not defined
+[2026-02-10 22:44:02] Strict-no-pad: no credible precepts for 1 Enoch 1:1 (source=enoch)
+[2026-02-10 22:55:34] Strict-no-pad: no credible precepts for 1 Enoch 1:1 (source=enoch)
+[2026-02-10 23:04:01] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-10 23:04:22] Strict-no-pad: no credible precepts for 1 Enoch 1:1 (source=enoch)
+[2026-02-10 23:04:45] Strict-no-pad: no credible precepts for Jasher 6:30 (source=jasher)
+[2026-02-10 23:05:10] Fallback used for Wisdom 4:2 | added=3 | source=apoc
+[2026-02-10 23:10:35] ERROR: 'str' object has no attribute 'exists'
+[2026-02-10 23:16:57] Strict-no-pad: no credible precepts for Quran 1:1 (source=quran)
+[2026-02-10 23:17:31] Fallback used for James 2:4 | added=3 | source=kjv
+[2026-02-10 23:21:15] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-10 23:21:18] Strict-no-pad: no credible precepts for Quran 1:1 (source=quran)
+[2026-02-10 23:22:35] Fallback used for Sirach 5:9 | added=3 | source=apoc
+[2026-02-10 23:23:36] Fallback used for 2 Esdras 4:8 | added=3 | source=apoc
+[2026-02-11 00:28:52] Fallback used for Amos 8:4 | added=3 | source=kjv
+[2026-02-11 00:53:40] ERROR: 'tuple' object has no attribute 'lower'
+[2026-02-11 00:53:40] ERROR: 'tuple' object has no attribute 'lower'
+[2026-02-11 00:53:41] ERROR: 'tuple' object has no attribute 'lower'
+[2026-02-11 00:53:41] ERROR: 'tuple' object has no attribute 'lower'
+[2026-02-11 00:53:41] ERROR: 'tuple' object has no attribute 'lower'
+[2026-02-11 00:53:42] ERROR: 'tuple' object has no attribute 'lower'
+[2026-02-11 00:53:50] ERROR: 'tuple' object has no attribute 'lower'
+[2026-02-11 00:56:11] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-11 00:56:23] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-11 00:56:27] Fallback used for Wisdom 1:1 | added=3 | source=apoc
+[2026-02-11 00:56:43] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-11 00:56:48] Strict-no-pad: no credible precepts for 1 Enoch 1:1 (source=enoch)
+[2026-02-11 00:56:51] Strict-no-pad: no credible precepts for Quran 1:1 (source=quran)
+[2026-02-11 00:57:51] Strict-no-pad: no credible precepts for Quran 1:1 (source=quran)
+[2026-02-11 00:58:46] Strict-no-pad: no credible precepts for Jasher 10:12 (source=jasher)
+[2026-02-11 00:59:03] Strict-no-pad: no credible precepts for Quran 1:1 (source=quran)
+[2026-02-11 00:59:06] Strict-no-pad: no credible precepts for Quran 1:2 (source=quran)
+[2026-02-11 00:59:09] Strict-no-pad: no credible precepts for Quran 1:3 (source=quran)
+[2026-02-11 01:00:53] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-11 01:00:57] Fallback used for Wisdom 1:1 | added=3 | source=apoc
+[2026-02-11 01:01:13] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-11 01:01:17] Strict-no-pad: no credible precepts for 1 Enoch 1:1 (source=enoch)
+[2026-02-11 01:01:21] Strict-no-pad: no credible precepts for Quran 1:1 (source=quran)
+[2026-02-11 01:07:20] Strict-no-pad: no credible precepts for Jasher 2:4 (source=jasher)
+[2026-02-11 01:07:24] Strict-no-pad: no credible precepts for Jasher 2:5 (source=jasher)
+[2026-02-11 01:08:30] Strict-no-pad: no credible precepts for Jasher 8:4 (source=jasher)
+[2026-02-11 01:08:33] Strict-no-pad: no credible precepts for Jasher 8:5 (source=jasher)
+[2026-02-11 01:09:03] Strict-no-pad: no credible precepts for Jasher 8:4 (source=jasher)
+[2026-02-11 01:09:06] Strict-no-pad: no credible precepts for Jasher 8:5 (source=jasher)
+[2026-02-11 22:52:06] Fallback used for Proverbs 16:6 | added=3 | source=kjv
+[2026-02-11 23:16:36] Fallback used for James 3:9 | added=3 | source=kjv
+[2026-02-11 23:17:30] Strict-no-pad: no credible precepts for Quran 17:25 (source=quran)
+[2026-02-11 23:17:33] Strict-no-pad: no credible precepts for Quran 17:26 (source=quran)
+[2026-02-11 23:17:35] Strict-no-pad: no credible precepts for Quran 17:27 (source=quran)
+[2026-02-11 23:17:39] Strict-no-pad: no credible precepts for Quran 17:28 (source=quran)
+[2026-02-11 23:21:18] Fallback used for James 2:9 | added=3 | source=kjv
+[2026-02-13 00:06:47] ERROR: name 'sirach_rows' is not defined
+[2026-02-13 00:11:03] ERROR: name 'sirach_rows' is not defined
+[2026-02-13 00:11:12] ERROR: name 'kjv' is not defined
+[2026-02-13 00:12:20] Fallback used for Wisdom 1:1 | added=3 | source=apoc
+[2026-02-13 00:18:24] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-13 00:18:26] ERROR: name 'strongs_ot_idx' is not defined
+[2026-02-13 00:18:31] Strict-no-pad: no credible precepts for 1 Enoch 1:1 (source=enoch)
+[2026-02-13 00:18:45] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-13 00:28:54] ERROR: name 'eng' is not defined
+[2026-02-13 00:33:01] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-13 00:42:22] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-13 15:20:49] ERROR: name 'expand_same_chapter_range' is not defined
+[2026-02-13 15:20:49] ERROR: name 'DEBUG' is not defined
+[2026-02-13 15:48:30] ERROR: name 'normalize_ref' is not defined
+[2026-02-13 15:48:31] ERROR: name 'DEBUG' is not defined
+[2026-02-13 15:48:32] ERROR: name 'normalize_ref' is not defined
+[2026-02-13 15:52:16] ERROR: name 'normalize_ref' is not defined
+[2026-02-13 15:52:16] ERROR: name 'DEBUG' is not defined
+[2026-02-13 15:52:17] ERROR: name 'normalize_ref' is not defined
+[2026-02-13 15:53:43] ERROR: name 'normalize_ref' is not defined
+[2026-02-13 15:53:43] ERROR: name 'DEBUG' is not defined
+[2026-02-13 15:53:44] ERROR: name 'normalize_ref' is not defined
+[2026-02-13 16:11:38] ERROR: name 'normalize_ref' is not defined
+[2026-02-13 16:11:40] ERROR: name 'normalize_ref' is not defined
+[2026-02-13 16:11:41] ERROR: name 'normalize_ref' is not defined
+[2026-02-13 16:14:54] ERROR: name 'NEAR_MISS_K_DEFAULT' is not defined
+[2026-02-13 16:14:56] ERROR: name 'NEAR_MISS_K_DEFAULT' is not defined
+[2026-02-13 16:14:57] ERROR: name 'NEAR_MISS_K_DEFAULT' is not defined
+[2026-02-13 16:24:58] ERROR: name 'book_of_ref' is not defined
+[2026-02-13 16:25:12] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-13 16:27:35] ERROR: name 'infer_corpus' is not defined
+[2026-02-13 16:27:48] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-13 16:28:33] ERROR: name 'tokenize' is not defined
+[2026-02-13 16:28:50] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-13 16:29:28] ERROR: name 'top_overlap_keywords' is not defined
+[2026-02-13 16:29:42] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-13 16:30:14] ERROR: name 'bigrams' is not defined
+[2026-02-13 16:30:29] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-13 16:30:47] ERROR: name 'build_idf' is not defined
+[2026-02-13 16:31:01] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-13 16:31:09] ERROR: name 'weighted_overlap_score' is not defined
+[2026-02-13 16:31:22] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-13 16:31:57] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-13 16:32:10] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-13 16:33:10] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-13 16:33:14] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-13 16:33:27] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-13 16:34:10] ERROR: name 'load_strongs_lexicon' is not defined
+[2026-02-13 16:35:12] ERROR: name 'sirach_refdict' is not defined
+[2026-02-13 16:45:24] Fallback used for Genesis 1:4 | added=3 | source=kjv
+[2026-02-13 16:49:06] Strict-no-pad: no credible precepts for Jasher 5:2 (source=jasher)
+[2026-02-13 16:49:10] Strict-no-pad: no credible precepts for Jasher 5:3 (source=jasher)
+[2026-02-13 16:52:39] Fallback used for Genesis 1:4 | added=3 | source=kjv
+[2026-02-13 16:53:50] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-13 16:54:11] Strict-no-pad: no credible precepts for 1 Enoch 1:1 (source=enoch)
+[2026-02-13 16:54:28] Strict-no-pad: no credible precepts for Shepherd of Hermas 1:1 (source=hermas)
+[2026-02-13 16:54:33] Strict-no-pad: no credible precepts for Jasher 5:11 (source=jasher)
+[2026-02-13 16:54:37] Strict-no-pad: no credible precepts for Quran 1:1 (source=quran)
+[2026-02-13 16:54:52] ERROR: name 'get_refs_for_topic' is not defined
+[2026-02-13 16:55:12] ERROR: name 'parse_ref' is not defined
+[2026-02-13 16:55:13] ERROR: name 'parse_ref' is not defined
+[2026-02-13 16:55:38] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-13 16:57:05] Fallback used for Colossians 1:16 | added=3 | source=kjv
+[2026-02-13 16:57:35] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-13 16:57:35] ERROR: 'charmap' codec can't encode character '\u2705' in position 12: character maps to <undefined>
+[2026-02-13 17:34:51] ERROR: cannot access local variable 'near_misses' where it is not associated with a value
+[2026-02-15 00:54:23] ERROR: cannot access local variable 'near_misses' where it is not associated with a value
+[2026-02-15 01:01:16] ERROR: cannot access local variable 'near_misses' where it is not associated with a value
+[2026-02-15 01:12:04] ERROR: cannot access local variable 'near_misses' where it is not associated with a value
+[2026-02-15 01:25:22] Fallback used for Romans 7:1 | added=3 | source=kjv
+[2026-02-15 01:47:33] Fallback used for John 14:23 | added=3 | source=kjv
+[2026-02-15 02:08:17] Fallback used for 2 Esdras 2:14 | added=3 | source=apoc
+[2026-02-15 02:08:55] Fallback used for 2 Esdras 2:14 | added=3 | source=apoc
+[2026-02-15 02:32:08] Strict-no-pad: no credible precepts for Jasher 13:20 (source=jasher)
+[2026-02-15 02:32:11] Strict-no-pad: no credible precepts for Jasher 13:21 (source=jasher)
+[2026-02-15 02:32:14] Strict-no-pad: no credible precepts for Jasher 13:22 (source=jasher)
+[2026-02-15 02:32:18] Strict-no-pad: no credible precepts for Jasher 13:23 (source=jasher)
+[2026-02-20 01:20:23] Fallback used for Ezekiel 18:21 | added=3 | source=kjv
+[2026-02-20 01:23:46] Fallback used for Deuteronomy 24:16 | added=3 | source=kjv
+[2026-02-20 02:12:26] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-20 02:12:31] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-20 02:13:34] Fallback used for John 14:23 | added=3 | source=kjv
+[2026-02-20 02:16:29] ERROR: name 'load_dir_csvs' is not defined
+[2026-02-20 02:16:30] ERROR: name 'load_dir_csvs' is not defined
+[2026-02-20 02:16:32] ERROR: name 'load_dir_csvs' is not defined
+[2026-02-20 02:16:33] ERROR: name 'load_dir_csvs' is not defined
+[2026-02-20 02:17:41] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-20 02:17:46] Fallback used for Genesis 1:1 | added=3 | source=kjv
+[2026-02-20 02:30:35] Fallback used for Amos 2:5 | added=3 | source=kjv
+[2026-02-20 17:47:26] Fallback used for Ezekiel 18:19 | added=3 | source=kjv
+[2026-02-20 17:48:33] Fallback used for Deuteronomy 24:16 | added=3 | source=kjv
+[2026-02-22 00:22:36] Fallback used for Tobit 2:9 | added=3 | source=apoc
+[2026-02-22 00:24:44] Fallback used for Ezekiel 18:19 | added=2 | source=kjv
+[2026-02-22 17:44:05] ERROR: name 'book_only' is not defined
+[2026-02-22 17:47:49] Fallback used for Tobit 2:9 | added=3 | source=apoc
+[2026-02-22 22:16:05] Fallback used for Deuteronomy 24:16 | added=2 | source=kjv
+[2026-02-22 22:44:52] Fallback used for Deuteronomy 24:16 | added=2 | source=kjv
+[2026-02-23 02:15:30] Fallback used for Deuteronomy 24:16 | added=2 | source=kjv
+[2026-02-23 02:22:07] Strict-no-pad: no credible precepts for Jasher 57:12 (source=jasher)
+[2026-03-01 00:34:38] Fallback used for Matthew 19:18 | added=3 | source=kjv
+[2026-03-02 01:00:32] Fallback used for Jeremiah 5:18 | added=3 | source=kjv
+[2026-03-02 01:18:27] Fallback used for 1 Corinthians 16:8 | added=3 | source=kjv
+[2026-03-02 01:20:24] Fallback used for 1 Corinthians 13:9 | added=3 | source=kjv
+[2026-03-02 01:49:13] Fallback used for Psalms 18:6 | added=3 | source=kjv
+[2026-03-02 02:40:42] Fallback used for Proverbs 10:5 | added=3 | source=kjv

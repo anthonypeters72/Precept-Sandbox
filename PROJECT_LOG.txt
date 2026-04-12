@@ -1,0 +1,160 @@
+PRECEPT SANDBOX — PROJECT LOG
+
+================================
+LATEST STATUS (read first)
+================================
+- Hermas fully wired using section-based addressing.
+- Strict no-padding enforced for non-Bible corpora (Hermas, Enoch, Quran, Jasher).
+- Hermas 1:1 returns real prose and no filler precepts.
+- Genesis 1:1 still pads to minimum precepts (expected).
+
+================================
+CHANGELOG
+================================
+
+[2026-02-09]
+- Added flatten_multicol_csv.py to normalize Excel-style CSV sources.
+- Added normalize_sectioned_lines.py for section-based corpora.
+- Normalized Shepherd of Hermas:
+  - Output: Data/hermas/apocrypha_hermas.csv
+  - Chapters = section index, verses = paragraph index
+  - Skips TOC / intro
+  - Filters all-caps headings
+- Wired Hermas into generic loader (no per-book loader).
+- Added Hermas aliases (Hermas → Shepherd of Hermas).
+- Added strict_no_pad flag to ensure_min_precepts():
+  - Disabled legacy filler for non-Bible corpora.
+- Verified:
+  - Hermas 1:1 → no filler precepts
+  - Genesis 1:1 → fallback padding intact
+
+================================
+NOTES / NEXT
+================================
+- Next corpus to wire: ________
+- Possible improvement: stopword refinement for long prose.
+- Consider logging source corpus in output for clarity.
+
+
+
+
+[2026-03-09]
+Major Milestone
+
+Established a reusable corpus ingestion pipeline and successfully integrated The Testaments of the Twelve Patriarchs into the Precept engine. This marks the first full demonstration of the system’s ability to take a raw text source and transform it into a structured corpus usable by the engine for verse lookup, cross-corpus similarity, and precept discovery.
+
+Work Completed
+
+1. Corpus Parsing Pipeline
+
+Created a custom parser (parse_patriarchs.py) to extract structured verse data from the Patriarchs PDF.
+
+Implemented logic to handle:
+
+chapter markers
+
+verse markers
+
+paired verses (e.g., “1,2”)
+
+inline verse numbering irregularities.
+
+2. Corpus Validation Tool
+
+Built validate_corpus.py to ensure corpus integrity.
+
+Validation checks include:
+
+duplicate verse keys
+
+missing text rows
+
+invalid chapter/verse values
+
+ordering regressions
+
+verse gap detection.
+
+Final validation results:
+
+Unique verse keys: 782
+Duplicate rows: 0
+Empty text rows: 0
+Bad chapter/verse rows: 0
+Verse gaps found: 7
+Ordering regressions: 0
+
+Remaining verse gaps are due to formatting irregularities in the source text and are considered acceptable for current engine usage.
+
+3. Corpus Integration
+
+Added Data/patriarchs/patriarchs.csv.
+
+Implemented a structured CSV loader within engine.py.
+
+Registered the corpus within the engine’s corpus registry.
+
+Updated lookup_text_any() to include the Patriarchs corpus.
+
+Added book normalization aliases for the twelve Testament books.
+
+4. Engine Verification
+
+Confirmed successful verse resolution:
+
+e.g. Testament of Judah 3:1
+
+Confirmed cross-corpus precepts function correctly:
+
+Patriarchs ↔ Jasher
+
+Patriarchs ↔ KJV
+
+Verified fallback and near-miss ranking logic remains stable.
+
+Example output showed relevant matches involving:
+
+Jasher
+
+Joshua (KJV)
+
+internal Patriarch passages.
+
+Architecture Achieved
+
+The project now supports a full corpus ingestion workflow:
+
+PDF / Source Text
+      ↓
+Parser Script
+      ↓
+Structured CSV (book,chapter,verse,text)
+      ↓
+Corpus Validator
+      ↓
+Data/<corpus> directory
+      ↓
+Engine Loader
+      ↓
+FastAPI Endpoint
+      ↓
+Precept Search + Cross-Corpus Linking
+
+This pipeline allows additional corpora to be added with minimal manual effort.
+
+Next Development Phase
+
+Transition focus from backend engine work to user accessibility.
+
+Planned next steps:
+
+Build a mobile-first UI for querying verses and viewing precepts.
+
+Package the interface as a Progressive Web App (PWA) for tester distribution without app stores.
+
+Deploy a test instance and begin gathering feedback from early users.
+
+Reflection
+
+This session represents a significant step toward turning the Precept system into a practical research and discovery tool. The ingestion pipeline ensures future texts can be added efficiently while maintaining consistency across the corpus ecosystem.
+
