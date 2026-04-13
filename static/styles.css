@@ -81,6 +81,33 @@ button {
 
 
 
+.help-box {
+  margin-bottom: 16px;
+  border: 1px solid #2f2f3f;
+  border-radius: 10px;
+  padding: 10px;
+  background: #11111a;
+  font-size: 14px;
+}
+
+.help-box summary {
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.help-content ul {
+  margin: 6px 0 12px 16px;
+}
+
+.help-content code {
+  background: #1a1a2a;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+
 
 /* === Loading Spinner === */
 .loading {
