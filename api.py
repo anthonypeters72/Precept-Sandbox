@@ -59,6 +59,7 @@ ALLOWED_CORPORA = {
     "jasher",
     "jubilees",
     "patriarchs",
+    "hermas"
 }
 
 CORPUS_LABELS = {
@@ -68,6 +69,7 @@ CORPUS_LABELS = {
     "jasher": "Jasher",
     "jubilees": "Jubilees",
     "patriarchs": "Patriarchs",
+    "hermas": "Hermas",
 }
 
 
@@ -404,10 +406,15 @@ def _run_text_search(
     scored: List[Tuple[float, str, str, str, int, int, List[Tuple[str, float]]]] = []
 
     for ref, verse_text, corpus_name in getattr(eng, "all_verses", []) or []:
+        if not corpus_name:
+            continue
+        if corpus_name not in ALLOWED_CORPORA:
+            continue
         if preferred_corpus and corpus_name != preferred_corpus:
             continue
-        if not verse_text:
+        if not verse_text or not str(verse_text).strip():
             continue
+
 
         s, top_terms, mcount, qcount = weighted_overlap_score(qtxt, verse_text, idf)
 
