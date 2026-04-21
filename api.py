@@ -472,8 +472,15 @@ def _run_text_search(
             ),
         })
 
-    return {"query_text": qtxt, "count": len(matches), "matches": matches}
+    top_matches = matches[:5]
+    next_refs = matches[5:10]
 
+    return {
+        "query_text": qtxt,
+        "count": len(matches),
+        "matches": top_matches,
+        "next_refs": [{"ref": m["ref"]} for m in next_refs],
+    }
 
 
 def _run_single_ref(

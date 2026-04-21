@@ -304,19 +304,32 @@ async function run() {
       return;
     }
 
-    if (data.kind === "text_search") {
+    if(data.kind === "text_search"){
+
       let html = `
         <h3>Search Results</h3>
         <div class="hint">${data.count} matches</div>
       `;
 
       html += data.matches.map(m => `
-        <div class="result-card" style="margin-top:12px;">
+        <div style="margin-top:12px;padding:10px;border:1px solid #333;border-radius:10px;background:#0f0f18;">
           <div style="font-weight:600">${m.ref}</div>
-          <div style="font-size:14px">${m.text || ""}</div>
-          <div class="muted">score ${m.score.toFixed(2)}</div>
+          <div style="font-size:14px">${m.text}</div>
+          <div style="font-size:12px;opacity:.6">score ${m.score.toFixed(2)}</div>
         </div>
       `).join("");
+
+      if (data.next_refs && data.next_refs.length) {
+        html += `
+          <h4 style="margin-top:16px;">More results</h4>
+        `;
+
+        html += data.next_refs.map(r => `
+          <div style="font-size:13px; margin-top:4px; opacity:0.7;">
+            ${r.ref}
+          </div>
+        `).join("");
+      }
 
       out.innerHTML = html;
       return;
