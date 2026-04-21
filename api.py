@@ -1166,6 +1166,19 @@ async function run(){
         </div>
       `).join("");
 
+
+      if (data.next_refs && data.next_refs.length) {
+        html += `
+        <h4 style="margin-top:16px;">More results</h4>
+        `;
+
+        html += data.next_refs.map(r => `
+        <div style="font-size:13px; margin-top:4px; opacity:0.7;">
+            ${r.ref}
+        </div>
+        `).join("");
+    }
+
       out.innerHTML = html;
       return;
     }
