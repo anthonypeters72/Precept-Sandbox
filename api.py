@@ -73,6 +73,22 @@ CORPUS_LABELS = {
 }
 
 
+COMMON_PHRASES = {
+    "god won't give you more than you can handle": {
+        "ref": "1 Corinthians 10:13",
+        "note": "Common phrase; closest related verse."
+    },
+    "money is the root of all evil": {
+        "ref": "1 Timothy 6:10",
+        "note": "Common wording; scripture says the love of money is the root of all kinds of evil."
+    },
+    "clean hands pure heart": {
+        "ref": "Psalms 24:4",
+        "note": "Closest related verse."
+    },
+}
+
+
 # adding dropdown selects, data pulls from "@" route endpoints
 def _list_books_for_corpus(eng, corpus_name: str) -> List[str]:
     d = eng.corpora.get(corpus_name, {})
@@ -990,6 +1006,28 @@ def query_get(
             
         
     if parsed["kind"] == "text_search":
+        phrase_query = (parsed.get("text", q_clean) or "").strip().lower()
+
+        if phrase_query in COMMON_PHRASES:
+            hit = COMMON_PHRASES[phrase_query]
+            result = _run_single_ref(
+                hit["ref"],
+                min_needed=min_needed,
+                min_books=min_books,
+                strict_no_pad=strict_no_pad,
+                near_miss_k=near_miss_k,
+                strong=bool(flags["strong"]),
+                preferred_corpus=flags.get("corpus"),
+            )
+
+            result["note"] = hit.get("note", "")
+
+            return {
+                "query": q,
+                "kind": "phrase_match",
+                "result": result,
+            }
+
         top_k = max(1, int(near_miss_k or 10))
         out = _run_text_search(
             parsed.get("text", q_clean),
@@ -1002,7 +1040,6 @@ def query_get(
             preferred_corpus=flags.get("corpus"),
         )
         return {"query": q, "kind": "text_search", **out}
-
     return {"query": q, "kind": "unknown", "error": "Unrecognized query format. Try: 'Gen 1:1' or 'Genesis 1-3'."}
 
 

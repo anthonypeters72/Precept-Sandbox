@@ -206,6 +206,13 @@ async function loadChapters(corpus, book) {
 }
 
 
+function runFromRef(ref) {
+  const input = document.getElementById("q");
+  input.value = ref;
+  run();
+}
+
+
 
 async function run() {
   const out = document.getElementById("out");
@@ -304,6 +311,32 @@ async function run() {
       return;
     }
 
+
+    if (data.kind === "phrase_match") {
+      const r = data.result;
+
+      let html = `
+        <h3 style="margin-top:0">${r.ref}</h3>
+        <div style="margin-bottom:10px">${r.text || ""}</div>
+        <div class="muted" style="margin-bottom:12px">source: ${r.corpus || ""}</div>
+      `;
+
+      if (r.note) {
+        html += `<div class="hint" style="margin-bottom:12px;">${r.note}</div>`;
+      }
+
+      if (r.precepts && r.precepts.length) {
+        html += `<h4>Precepts</h4>`;
+        html += r.precepts.map(preceptCard).join("");
+      }
+
+      out.innerHTML = html;
+      return;
+    }
+
+
+
+
     if(data.kind === "text_search"){
 
       let html = `
@@ -325,7 +358,7 @@ async function run() {
         `;
 
         html += data.next_refs.map(r => `
-          <div style="font-size:13px; margin-top:4px; opacity:0.7;">
+          <div class="clickable-ref" onclick="runFromRef('${r.ref}')">
             ${r.ref}
           </div>
         `).join("");

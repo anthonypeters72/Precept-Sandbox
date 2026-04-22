@@ -148,3 +148,15 @@ button {
   border-radius: 12px;
   background: #11111a;
 }
+
+
+.clickable-ref {
+  font-size:13px;
+  margin-top:4px;
+  cursor:pointer;
+  color:#8ab4ff;
+}
+
+.clickable-ref:hover {
+  text-decoration: underline;
+}
