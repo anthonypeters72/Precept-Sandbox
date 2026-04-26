@@ -150,21 +150,6 @@ button {
 }
 
 
-#backBtn {
-  margin-left: 8px;
-  padding: 6px 10px;
-  border-radius: 6px;
-  background: #222;
-  color: #fff;
-  border: 1px solid #444;
-  cursor: pointer;
-}
-
-#backBtn:hover {
-  background: #333;
-}
-
-
 .clickable-ref {
   font-size:13px;
   margin-top:4px;
@@ -174,4 +159,23 @@ button {
 
 .clickable-ref:hover {
   text-decoration: underline;
+}
+
+
+#backBtn {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #7335e6;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
+
+#backBtn:hover {
+  background: #333;
 }

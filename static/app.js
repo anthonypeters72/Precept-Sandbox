@@ -16,26 +16,12 @@ function saveCurrentState() {
   }
 }
 
-// function goBack() {
-//   if (!historyStack.length) return;
-
-//   const prev = historyStack.pop();
-//   document.getElementById("out").innerHTML = prev.html;
-//   document.getElementById("q").value = prev.query;
-// }
-
-
-
 function goBack() {
-  if (historyStack.length === 0) return;
+  if (!historyStack.length) return;
 
   const prev = historyStack.pop();
-
-  const out = document.getElementById("out");
-  const input = document.getElementById("q");
-
-  out.innerHTML = prev.html;
-  input.value = prev.query;
+  document.getElementById("out").innerHTML = prev.html;
+  document.getElementById("q").value = prev.query;
 }
 
 
@@ -261,17 +247,6 @@ async function loadChapters(corpus, book) {
 }
 
 
-function runFromRef(ref) {
-  const input = document.getElementById("q");
-  input.value = ref;
-  run();
-}
-
-
-
-
-
-
 
 
 async function run() {
@@ -411,7 +386,9 @@ async function run() {
         <div style="margin-top:12px;padding:10px;border:1px solid #333;border-radius:10px;background:#0f0f18;">
           <div style="font-weight:600">${m.ref}</div>
           <div style="font-size:14px">${m.text}</div>
-          <div style="font-size:12px;opacity:.6">score ${m.score.toFixed(2)}</div>
+          <div style="font-size:12px;opacity:.6">
+            ${m.corpus} • score ${m.score.toFixed(2)}
+          </div>
         </div>
       `).join("");
 
@@ -432,7 +409,7 @@ async function run() {
     }
 
 
-    const q = getFinalQuery();
+    // const q = getFinalQuery();
 
     if (out.innerHTML.trim()) {
       historyStack.push({
