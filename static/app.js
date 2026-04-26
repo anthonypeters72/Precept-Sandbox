@@ -216,6 +216,18 @@ function runFromRef(ref) {
 let historyStack = [];
 
 
+function goBack() {
+  if (historyStack.length === 0) return;
+
+  const prev = historyStack.pop();
+
+  const out = document.getElementById("out");
+  const input = document.getElementById("q");
+
+  out.innerHTML = prev.html;
+  input.value = prev.query;
+}
+
 async function run() {
   const out = document.getElementById("out");
   const searchBtn = document.getElementById("searchBtn");
