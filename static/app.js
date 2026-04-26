@@ -16,13 +16,28 @@ function saveCurrentState() {
   }
 }
 
+// function goBack() {
+//   if (!historyStack.length) return;
+
+//   const prev = historyStack.pop();
+//   document.getElementById("out").innerHTML = prev.html;
+//   document.getElementById("q").value = prev.query;
+// }
+
+
+
 function goBack() {
-  if (!historyStack.length) return;
+  if (historyStack.length === 0) return;
 
   const prev = historyStack.pop();
-  document.getElementById("out").innerHTML = prev.html;
-  document.getElementById("q").value = prev.query;
+
+  const out = document.getElementById("out");
+  const input = document.getElementById("q");
+
+  out.innerHTML = prev.html;
+  input.value = prev.query;
 }
+
 
 function runFromRef(ref) {
   saveCurrentState();
@@ -256,17 +271,6 @@ function runFromRef(ref) {
 
 
 
-function goBack() {
-  if (historyStack.length === 0) return;
-
-  const prev = historyStack.pop();
-
-  const out = document.getElementById("out");
-  const input = document.getElementById("q");
-
-  out.innerHTML = prev.html;
-  input.value = prev.query;
-}
 
 
 
