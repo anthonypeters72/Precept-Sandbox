@@ -213,6 +213,8 @@ function runFromRef(ref) {
 }
 
 
+let historyStack = [];
+
 
 async function run() {
   const out = document.getElementById("out");
@@ -246,6 +248,9 @@ async function run() {
 
     const res = await fetch(url);
     const data = await res.json();
+    const q = getFinalQuery();
+
+
 
     if (data.error) {
       out.innerHTML = `<div style="color:#ff8080">${data.error}</div>`;
@@ -367,6 +372,18 @@ async function run() {
       out.innerHTML = html;
       return;
     }
+
+
+    // const q = getFinalQuery();
+
+    if (out.innerHTML.trim()) {
+      historyStack.push({
+        html: out.innerHTML,
+        query: q
+      });
+    }
+
+
 
     out.innerHTML = '<div class="hint">No renderer for result type.</div>';
   } catch (e) {
