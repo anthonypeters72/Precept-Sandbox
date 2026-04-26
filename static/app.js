@@ -248,7 +248,7 @@ async function run() {
 
     const res = await fetch(url);
     const data = await res.json();
-    const q = getFinalQuery();
+    // const q = getFinalQuery();
 
 
 
@@ -374,7 +374,7 @@ async function run() {
     }
 
 
-    // const q = getFinalQuery();
+    const q = getFinalQuery();
 
     if (out.innerHTML.trim()) {
       historyStack.push({
