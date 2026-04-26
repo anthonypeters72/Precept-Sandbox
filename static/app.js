@@ -1,5 +1,45 @@
 // alert("APP JS LOADED v99");
 
+
+
+let historyStack = [];
+
+function saveCurrentState() {
+  const out = document.getElementById("out");
+  const input = document.getElementById("q");
+
+  if (out && out.innerHTML.trim()) {
+    historyStack.push({
+      html: out.innerHTML,
+      query: input.value
+    });
+  }
+}
+
+function goBack() {
+  if (!historyStack.length) return;
+
+  const prev = historyStack.pop();
+  document.getElementById("out").innerHTML = prev.html;
+  document.getElementById("q").value = prev.query;
+}
+
+function runFromRef(ref) {
+  saveCurrentState();
+
+  const input = document.getElementById("q");
+  input.value = ref;
+  run();
+}
+
+// make available to onclick=""
+window.goBack = goBack;
+window.runFromRef = runFromRef;
+
+
+
+
+
 function verseCard(v) {
   let html = `
     <div class="result-card">
@@ -213,7 +253,7 @@ function runFromRef(ref) {
 }
 
 
-let historyStack = [];
+
 
 
 function goBack() {
@@ -227,6 +267,8 @@ function goBack() {
   out.innerHTML = prev.html;
   input.value = prev.query;
 }
+
+
 
 async function run() {
   const out = document.getElementById("out");
@@ -260,7 +302,7 @@ async function run() {
 
     const res = await fetch(url);
     const data = await res.json();
-    // const q = getFinalQuery();
+    
 
 
 
