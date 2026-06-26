@@ -1,3 +1,24 @@
 archive/
 backup/
 *.zip
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local backups
+Backups/
+
+# Local/generated logs
+PROJECT_LOG.txt
+PROJECT_LOG_AUTO.txt
+
+# Environment/config
+.env
+.env.*
+
+# IDE/OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
